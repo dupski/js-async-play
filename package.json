@@ -1,0 +1,15 @@
+{
+  "name": "fun-with-promises",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "0.0.32",
+    "typescript": "2.2.1"
+  },
+  "dependencies": {
+  }
+}
