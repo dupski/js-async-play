@@ -8,21 +8,22 @@ export function callApi(url: string, cb: Function) {
 export function callApiPromise(url: string) {
     return new Promise<string>((resolve, reject) => {
 
-        /*if (url == 'www.bing.com') {
+        if (url == 'www.error.com') {
             reject(new Error('bad url'));
-        }*/
-
-        callApi(url, (result: string, error: Error) => {
-            if (error) {
-                reject(error);
-            }
-            else {
-                resolve(result);
-            }
-        })
-        setTimeout(() => {
-            reject(new Error('timed out'))
-        }, 10000);
+        }
+        else {
+            callApi(url, (result: string, error: Error) => {
+                if (error) {
+                    reject(error);
+                }
+                else {
+                    resolve(result);
+                }
+            })
+            setTimeout(() => {
+                reject(new Error('timed out'))
+            }, 10000);
+        }
 
     })
 }
