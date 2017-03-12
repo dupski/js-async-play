@@ -1,4 +1,4 @@
-# JS Async Playground
+# JS Async Play
 
 Includes:
 
